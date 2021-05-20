@@ -20,6 +20,8 @@ source-repository head
 
 library
   exposed-modules:
+    Z.Data.CBOR
+    Z.Data.CBOR.Base
     Z.Data.CBOR.Builder
     Z.Data.CBOR.Value
 
