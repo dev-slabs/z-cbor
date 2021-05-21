@@ -37,8 +37,7 @@ data Value
     | Str    {-# UNPACK #-} !T.Text                 -- ^ type 3, a UTF-8 string
     | Array  {-# UNPACK #-} !(V.Vector Value)       -- ^ type 4, a sequence of objects
     | Map    {-# UNPACK #-} !(V.Vector (Value, Value)) -- ^ type 5, key-value pairs of objects
-    | Tagged {-# UNPACK #-} !Word64                  -- ^ type 6, tagged item
-             {-# UNPACK #-} !Value                -- ^ data payload
+    | Tagged {-# UNPACK #-} !Word64 Value              -- ^ type 6, tagged item
     -- simple value
     | Bool                  !Bool                   -- ^ true or false
     | Nil                                           -- ^ nil

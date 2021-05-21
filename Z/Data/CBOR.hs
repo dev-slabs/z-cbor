@@ -224,3 +224,7 @@ deriving anyclass instance (CBOR (f a), CBOR (g a)) => CBOR (Product f g a)
 
 deriving anyclass instance (CBOR a, CBOR b) => CBOR (a, b)
 deriving anyclass instance (CBOR a, CBOR b, CBOR c) => CBOR (a, b, c)
+deriving anyclass instance (CBOR a, CBOR b, CBOR c, CBOR d) => CBOR (a, b, c, d)
+deriving anyclass instance (CBOR a, CBOR b, CBOR c, CBOR d, CBOR e) => CBOR (a, b, c, d, e)
+deriving anyclass instance (CBOR a, CBOR b, CBOR c, CBOR d, CBOR e, CBOR f) => CBOR (a, b, c, d, e, f)
+deriving anyclass instance (CBOR a, CBOR b, CBOR c, CBOR d, CBOR e, CBOR f, CBOR g) => CBOR (a, b, c, d, e, f, g)
